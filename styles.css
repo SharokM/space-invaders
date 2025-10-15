@@ -4,6 +4,7 @@
   border: solid 1px black;
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: center; */
 }
 
 .grid div {
@@ -27,5 +28,5 @@
 }
 
 .boom {
-  background-color: rgb(255, 214, 196);
+  background-color: rgb(255, 240, 196);
 }
