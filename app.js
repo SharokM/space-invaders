@@ -1,8 +1,8 @@
 const grid = document.querySelector(".grid")
 const results = document.querySelector(".results")
-let currentShooterIndex = 202
 const width = 15
 const aliensRemoved = []
+let currentShooterIndex = 202
 let invadersId 
 let isGoingRight = true
 let direction = 1
@@ -17,7 +17,7 @@ for (let i = 0; i < width * width; i++) {
 
 const squares = Array.from(document.querySelectorAll('.grid div'))
 
-console.log(squares)
+// console.log(squares)
 
 const alienInvaders = [
     0,1,2,3,4,5,6,7,8,9,
@@ -70,10 +70,48 @@ function moveInvaders () {
         }
     }
 
+    if (leftEdge &&!isGoingRight) {
+        for (let i = 0; i < alienInvaders.length; i++) {
+            alienInvaders[i] += width - 1
+            direction = 1
+            isGoingRight = true
+        }
+    }
+
     for (let i = 0; i < alienInvaders.length; i++) {
         alienInvaders[i] += direction
     }
 
     draw()
+
+    if (squares[currentShooterIndex]. classList.contains('invader')) {
+        resultDisplay.innerHTML = "GAME OVER!"
+        resultDisplay.style.fontWeight = 'bolder' 
+        clearInterval(invadersId)
+    }
+
+    if (aliensRemoved.length === alienInvaders.length) {
+        resultDisplay.innerHTML = "YOU WIN!"
+        clearInterval(invadersId)
+    }
 }
 invadersId = setInterval(moveInvaders, 600)
+
+function shoot() {
+    let laserId
+
+    let currentLaserIndex = currentShooterIndex
+
+    function moveShooter
+}
+
+
+
+
+
+
+
+
+
+
+
