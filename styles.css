@@ -10,8 +10,8 @@
 .grid div {
   width: 20px;
   height: 20px;
-  /* box-sizing: border-box;
-  border: solid 1px rgb(196, 52, 52); */
+  box-sizing: border-box;
+  border: solid 1px rgb(52, 196, 186);
 }
 
 .invader {
@@ -20,7 +20,7 @@
 }
 
 .shooter {
-  background-color: green;
+  background-color: rgb(4, 9, 4);
 }
 
 .laser {
