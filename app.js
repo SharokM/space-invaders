@@ -7,8 +7,12 @@ let invadersId
 let isGoingRight = true
 let direction = 1
 let results = 0 
+var modeMenu = document.querySelector("#modes");
+var body = document.querySelector("body");
 
 
+
+// CONTROL FUNCTIONALITY 
 
 for (let i = 0; i < width * width; i++) {
     const square = document.createElement('div')
@@ -129,9 +133,27 @@ function shoot(e) {
     }
  }
 
-
 document.addEventListener('keydown', shoot) 
 
+
+// Light/ Dark Mode 
+
+modeMenu.addEventListener("change", function (e) {
+    var mode = e.target.value;
+    if (mode === "light") {
+      body.classList.remove("dark");
+      body.classList.remove("premium");
+      body.classList.add("light");
+    } else if (mood === "dark") {
+      body.classList.remove("light");
+      body.classList.remove("premium");
+      body.classList.add("dark");
+    } else if (mood === "premium") {
+      body.classList.remove("dark");
+      body.classList.remove("light");
+      body.classList.add("premium");
+    }
+  });
 
 
 

@@ -1,17 +1,20 @@
+body {
+  background-color: rgba(208, 162, 35, 0.669);
+}
+
 .grid {
   width: 300px;
   height: 300px;
-  border: solid 1px rgb(81, 78, 78);
+  border: solid 4px rgba(203, 7, 7, 0.678);
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 
 .grid div {
   width: 20px;
   height: 20px;
   box-sizing: border-box;
-  border: solid 1px rgb(3, 3, 3);
+  border: solid 1px rgba(177, 5, 5, 0.685);
 }
 
 .invader {
@@ -29,4 +32,61 @@
 
 .boom {
   background-color: rgb(223, 173, 22);
+}
+
+h2 {
+  font-weight: bold;
+  color: hotpink;
+  font-size: 1.79rem;
+  text-decoration-thickness: 2px;
+  font-family: "BBH Sans Bartle", sans-serif;
+  text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  animation: main-title 2s infinite;
+}
+
+@keyframes main-title {
+  0%,
+  100% {
+    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  }
+  50% {
+    text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+  }
+}
+
+h3 {
+  font-family: "BBH Sans Bartle", sans-serif;
+  color: rgba(237, 18, 18, 0.552);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-title {
+  text-align: center;
+  font-family: ;
+}
+
+.results {
+  font-family: "Share Tech", sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.results {
+  text-align: center;
+  color: #ff005e;
+  font-family: ;
+}
+
+.dark-mode {
+  color: rgb(152, 119, 141);
+  font-family: "Share Tech", sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
 }

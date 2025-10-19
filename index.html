@@ -6,11 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Space-Invaders</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <h1 class="results">0</h1>
-    <div class="grid"></div>
-    <script src="app.js"></script>
+    <header class="main-title">
+      <h2 class="h2">SPACE INVADERS</h2>
+      <div>
+        <h3>Episode I</h3>
+
+        <div class="dark-mode">
+          <label for="mode">Too Bright?</label>
+          <select name="modes" id="modes">
+            <option value="bright">Light</option>
+            <option value="sad">Dark</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <aside id="results">
+      <h4 class="results">#score count#</h4>
+    </aside>
+
+    <grid class="grid-wrapper">
+      <div class="grid"></div>
+      <script src="app.js"></script>
+    </grid>
   </body>
 </html>
 
