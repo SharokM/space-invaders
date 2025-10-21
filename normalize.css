@@ -188,6 +188,8 @@ button,
 select {
   /* 1 */
   text-transform: none;
+  background-color: rgb(188, 72, 134);
+  color: aliceblue;
 }
 
 /**

@@ -11,12 +11,12 @@ var body = document.querySelector("body");
 const restartButton = document.querySelector('#restartButton')
 
 function newGame() {
-    grid.innerHTML = ""
+    // grid.innerHTML = ""
     resultDisplay.textContent = "0"
     results = 0
     aliensRemoved.length = 0
     currentShooterIndex = 202
-    isGoingRight - true
+    isGoingRight = true
     direction = 1
 }
 
@@ -146,10 +146,15 @@ function shoot(e) {
 document.addEventListener('keydown', shoot) 
 
 restartButton.addEventListener('click', function() {
-    clearInterval(invadersId)
-    newGame()
-})
+    clearInterval(invadersId); // stop old movement
+    newGame(); // reset variables
+    squares.forEach(sq => sq.classList.remove('invader', 'laser', 'boom', 'shooter')); // clear visuals
+    draw(); // draw invaders again
+    squares[currentShooterIndex].classList.add('shooter'); // place shooter again
+    invadersId = setInterval(moveInvaders, 600); // restart movement
+  });  
 newGame()
+// draw()
 
 
 // Light/ Dark Mode 
@@ -160,11 +165,11 @@ modeMenu.addEventListener("change", function (e) {
       body.classList.remove("dark");
       body.classList.remove("premium");
       body.classList.add("light");
-    } else if (mood === "dark") {
+    } else if (mode === "dark") {
       body.classList.remove("light");
       body.classList.remove("premium");
       body.classList.add("dark");
-    } else if (mood === "premium") {
+    } else if (mode === "premium") {
       body.classList.remove("dark");
       body.classList.remove("light");
       body.classList.add("premium");
