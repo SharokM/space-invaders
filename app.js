@@ -3,14 +3,22 @@ const resultDisplay = document.querySelector(".results")
 const width = 15
 const aliensRemoved = []
 let currentShooterIndex = 202
-let invadersId 
 let isGoingRight = true
 let direction = 1
 let results = 0 
 var modeMenu = document.querySelector("#modes");
 var body = document.querySelector("body");
+const restartButton = document.querySelector('#restartButton')
 
-
+function newGame() {
+    grid.innerHTML = ""
+    resultDisplay.textContent = "0"
+    results = 0
+    aliensRemoved.length = 0
+    currentShooterIndex = 202
+    isGoingRight - true
+    direction = 1
+}
 
 // CONTROL FUNCTIONALITY 
 
@@ -20,9 +28,11 @@ for (let i = 0; i < width * width; i++) {
     grid.appendChild(square)
 }
 
-const squares = Array.from(document.querySelectorAll('.grid div'))
+const squaresArray = Array.from(document.querySelectorAll('.grid div'))
 
 // console.log(squares)
+let invadersId 
+let squares = squaresArray
 
 const alienInvaders = [
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
@@ -36,16 +46,16 @@ function draw() {
         squares[alienInvaders[i]].classList.add('invader')
     }
 }
-draw()
-
-
-squares[currentShooterIndex].classList.add('shooter')
 
 function remove() {
     for (let i =0; i < alienInvaders.length; i++) {
         squares[alienInvaders[i]].classList.remove('invader')
     }
 }
+
+draw()
+squares[currentShooterIndex].classList.add('shooter')
+
 
 function moveShooter(e) {
     squares[currentShooterIndex].classList.remove('shooter')
@@ -135,11 +145,17 @@ function shoot(e) {
 
 document.addEventListener('keydown', shoot) 
 
+restartButton.addEventListener('click', function() {
+    clearInterval(invadersId)
+    newGame()
+})
+newGame()
+
 
 // Light/ Dark Mode 
 
 modeMenu.addEventListener("change", function (e) {
-    var mode = e.target.value;
+    let mode = e.target.value;
     if (mode === "light") {
       body.classList.remove("dark");
       body.classList.remove("premium");
@@ -155,7 +171,7 @@ modeMenu.addEventListener("change", function (e) {
     }
   });
 
-
+ 
 
 
 

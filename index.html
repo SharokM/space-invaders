@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Space-Invaders</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,17 +19,19 @@
     <header class="main-title">
       <h2 class="h2">SPACE INVADERS</h2>
       <div>
-        <h3>Episode I</h3>
+        <h3>Episode I<h3>
 
         <div class="dark-mode">
-          <label for="mode">Too Bright?</label>
+          <label for="modes">Too Bright?</label>
           <select name="modes" id="modes">
-            <option value="bright">Light</option>
-            <option value="sad">Dark</option>
-            <option value="Premium">Premium</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="premium">Premium</option>
           </select>
         </div>
       </div>
+    <button id="restartButton" class="restart-button">Restart Game</button>
+    
     </header>
 
     <aside id="results">
