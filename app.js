@@ -101,12 +101,15 @@ function moveInvaders () {
 
     if (squares[currentShooterIndex]. classList.contains('invader')) {
         resultDisplay.innerHTML = "GAME OVER!"
+        resultDisplay.style.fontSize = '2rem'
         resultDisplay.style.fontWeight = 'bolder' 
         clearInterval(invadersId)
     }
 
     if (aliensRemoved.length === alienInvaders.length) {
         resultDisplay.innerHTML = "YOU WIN!"
+        resultDisplay.style.fontSize = '2rem'
+        resultDisplay.style.fontWeight = 'bolder' 
         clearInterval(invadersId)
     }
 }
