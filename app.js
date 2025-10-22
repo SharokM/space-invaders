@@ -84,6 +84,7 @@ document.addEventListener('keydown', moveShooter)
     resultDisplay.style.fontSize = '4rem'
     resultDisplay.style.fontWeight = 'bolder' 
     resultDisplay.style.color = 'red'
+
     const flash = document.createElement('div')
     flash.style.position = 'fixed';
     flash.style.top = 0;
@@ -95,15 +96,20 @@ document.addEventListener('keydown', moveShooter)
     flash.style.zIndex = 9999;
     flash.style.pointerEvents = 'none';
     document.body.appendChild(flash)
-
-    flash.animate([
-        { opacity: 0.8 },
-        { opacity: 0 }
-      ], {
-        duration: 400,
-        easing: 'ease-out'
-      }).onfinish = () => flash.remove();
-}
+    
+  setTimeout(() => {
+    flash.animate(
+        [
+            {opacity:0.8},
+            {opacity: 0 }
+        ],
+        {
+            duration: 600,
+            easing: 'ease-out'
+        }
+    ).onfinish = () => flash.remove();
+  }, 0);
+  }
 
 function WinningColors () {
     resultDisplay.innerHTML = "YOU WIN!"
@@ -112,8 +118,11 @@ function WinningColors () {
     resultDisplay.style.color = 'green'
 }
 
-  
+// setTimeout(() => {
+//     flash.animate([...])
+// }, 0)
 
+  
 function moveInvaders () {
     const leftEdge = alienInvaders[0] % width === 0
     const rightEdge = alienInvaders[alienInvaders.length -1] % width === width -1
