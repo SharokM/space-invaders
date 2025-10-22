@@ -83,7 +83,14 @@ document.addEventListener('keydown', moveShooter)
     resultDisplay.innerHTML = "GAME OVER!"
     resultDisplay.style.fontSize = '4rem'
     resultDisplay.style.fontWeight = 'bolder' 
-    resultDisplay.style.color = 'red'
+    resultDisplay.style.color = '#4e0101ed'
+
+    function WinningColors () {
+        resultDisplay.innerHTML = "YOU WIN!"
+        resultDisplay.style.fontSize = '4rem'
+        resultDisplay.style.fontWeight = 'bolder' 
+        resultDisplay.style.color = '#4e0101ed'
+    }
 
     const flash = document.createElement('div')
     flash.style.position = 'fixed';
@@ -110,13 +117,6 @@ document.addEventListener('keydown', moveShooter)
     ).onfinish = () => flash.remove();
   }, 0);
   }
-
-function WinningColors () {
-    resultDisplay.innerHTML = "YOU WIN!"
-    resultDisplay.style.fontSize = '4rem'
-    resultDisplay.style.fontWeight = 'bolder' 
-    resultDisplay.style.color = 'green'
-}
 
 // setTimeout(() => {
 //     flash.animate([...])

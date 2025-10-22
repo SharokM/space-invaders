@@ -101,7 +101,7 @@ h4 {
 .results {
   text-align: center;
   color: #ff005e;
-  font-family: ;
+  font-family: cursive;
 }
 
 .dark-mode {
@@ -226,6 +226,7 @@ footer .copyright {
 
 address {
   font-size: 12px;
+  text-align: center;
 }
 
 .copyright {
