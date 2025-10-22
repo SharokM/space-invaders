@@ -79,6 +79,41 @@ function moveShooter(e) {
 
 document.addEventListener('keydown', moveShooter)
 
+  function LosingColors () {
+    resultDisplay.innerHTML = "GAME OVER!"
+    resultDisplay.style.fontSize = '4rem'
+    resultDisplay.style.fontWeight = 'bolder' 
+    resultDisplay.style.color = 'red'
+    const flash = document.createElement('div')
+    flash.style.position = 'fixed';
+    flash.style.top = 0;
+    flash.style.left = 0;
+    flash.style.width = '100%';
+    flash.style.height = '100%';
+    flash.style.background = 'red';
+    flash.style.opacity = 0.8;
+    flash.style.zIndex = 9999;
+    flash.style.pointerEvents = 'none';
+    document.body.appendChild(flash)
+
+    flash.animate([
+        { opacity: 0.8 },
+        { opacity: 0 }
+      ], {
+        duration: 400,
+        easing: 'ease-out'
+      }).onfinish = () => flash.remove();
+}
+
+function WinningColors () {
+    resultDisplay.innerHTML = "YOU WIN!"
+    resultDisplay.style.fontSize = '4rem'
+    resultDisplay.style.fontWeight = 'bolder' 
+    resultDisplay.style.color = 'green'
+}
+
+  
+
 function moveInvaders () {
     const leftEdge = alienInvaders[0] % width === 0
     const rightEdge = alienInvaders[alienInvaders.length -1] % width === width -1
@@ -106,17 +141,14 @@ function moveInvaders () {
 
     draw()
 
+
     if (squares[currentShooterIndex]. classList.contains('invader')) {
-        resultDisplay.innerHTML = "GAME OVER!"
-        resultDisplay.style.fontSize = '2rem'
-        resultDisplay.style.fontWeight = 'bolder' 
+        LosingColors()
         clearInterval(invadersId)
     }
 
     if (aliensRemoved.length === alienInvaders.length) {
-        resultDisplay.innerHTML = "YOU WIN!"
-        resultDisplay.style.fontSize = '2rem'
-        resultDisplay.style.fontWeight = 'bolder' 
+        WinningColors()
         clearInterval(invadersId)
     }
 }

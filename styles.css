@@ -160,6 +160,7 @@ h3 {
 #restartButton {
 }
 
+/* TABLET MEDIA QUERY  */
 @media screen and (min-width: 768px) {
   body {
   }
@@ -172,9 +173,15 @@ h3 {
   }
 
   .grid {
+    width: 600px;
+    height: 600px;
   }
 
   .grid div {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: solid 1px rgb(177 5 5 / 83%);
   }
 
   .invader {
@@ -208,6 +215,9 @@ h3 {
   }
 
   .results {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bolder;
   }
 
   .dark-mode {
@@ -235,6 +245,7 @@ h3 {
   }
 }
 
+/* DESKTOP MEDIA QUERY  */
 @media only screen and (min-width: 1200px) {
   body {
   }
