@@ -18,6 +18,7 @@ body.premium {
   border: solid 4px rgba(203, 7, 7, 0.678);
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .grid div {
