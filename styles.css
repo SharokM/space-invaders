@@ -159,3 +159,155 @@ h3 {
 
 #restartButton {
 }
+
+@media screen and (min-width: 768px) {
+  body {
+  }
+
+  body.dark {
+  }
+  body.light {
+  }
+  body.premium {
+  }
+
+  .grid {
+  }
+
+  .grid div {
+  }
+
+  .invader {
+  }
+
+  .shooter {
+  }
+
+  .laser {
+  }
+
+  .boom {
+  }
+
+  h2 {
+  }
+
+  @keyframes main-title {
+  }
+
+  h3 {
+  }
+
+  .main-title {
+  }
+
+  .results {
+  }
+
+  .grid-wrapper {
+  }
+
+  .results {
+  }
+
+  .dark-mode {
+  }
+
+  .mode-select {
+  }
+
+  .mode-select label {
+  }
+
+  .mode-select select {
+  }
+
+  .restart-button {
+  }
+
+  .restart-button:hover {
+  }
+
+  .restart-button:active {
+  }
+
+  #restartButton {
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+  }
+
+  body.dark {
+  }
+
+  body.light {
+  }
+
+  body.premium {
+  }
+
+  .grid {
+  }
+
+  .grid div {
+  }
+
+  .invader {
+  }
+
+  .shooter {
+  }
+
+  .laser {
+  }
+
+  .boom {
+  }
+
+  h2 {
+  }
+
+  @keyframes main-title {
+  }
+
+  h3 {
+  }
+
+  .main-title {
+  }
+
+  .results {
+  }
+
+  .grid-wrapper {
+  }
+
+  .results {
+  }
+
+  .dark-mode {
+  }
+
+  .mode-select {
+  }
+
+  .mode-select label {
+  }
+
+  .mode-select select {
+  }
+
+  .restart-button {
+  }
+
+  .restart-button:hover {
+  }
+
+  .restart-button:active {
+  }
+
+  #restartButton {
+  }
+}
