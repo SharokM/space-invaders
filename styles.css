@@ -27,6 +27,7 @@ body.premium {
   border: solid 1px rgba(177, 5, 5, 0.685);
 }
 
+/* add icons to invaders & shooter */
 .invader {
   background-color: rgb(219, 42, 228);
   border-radius: 10px;
@@ -100,10 +101,13 @@ h4 {
   margin-bottom: 15px;
 }
 
+.score-title,
 .results {
   text-align: center;
   color: #ff005e;
-  font-family: cursive;
+  font-family: "Share Tech", sans-serif;
+  margin: 5px;
+  font-size: medium;
 }
 
 .dark-mode {
@@ -306,10 +310,18 @@ address {
   address {
     font-size: 0.78em;
   }
+
+  .score-title {
+    font-size: 2.1em;
+  }
 }
 
 /* DESKTOP MEDIA QUERY  */
 @media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+
   footer .content-wrapper {
     height: 350px;
   }
