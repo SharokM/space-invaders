@@ -85,13 +85,6 @@ document.addEventListener('keydown', moveShooter)
     resultDisplay.style.fontWeight = 'bolder' 
     resultDisplay.style.color = '#4e0101ed'
 
-    function WinningColors () {
-        resultDisplay.innerHTML = "YOU WIN!"
-        resultDisplay.style.fontSize = '4rem'
-        resultDisplay.style.fontWeight = 'bolder' 
-        resultDisplay.style.color = '#4e0101ed'
-    }
-
     const flash = document.createElement('div')
     flash.style.position = 'fixed';
     flash.style.top = 0;
@@ -117,6 +110,13 @@ document.addEventListener('keydown', moveShooter)
     ).onfinish = () => flash.remove();
   }, 0);
   }
+
+  function WinningColors () {
+    resultDisplay.innerHTML = "YOU WIN!"
+    resultDisplay.style.fontSize = '4rem'
+    resultDisplay.style.fontWeight = 'bolder' 
+    resultDisplay.style.color = '#4e0101ed'
+}
 
 // setTimeout(() => {
 //     flash.animate([...])
@@ -206,6 +206,13 @@ restartButton.addEventListener('click', function() {
   });  
 newGame()
 // draw()
+
+// PREMIUM PAY ALERT POP UP 
+modeMenu.addEventListener('click', function (e) {
+    if (e.key === "Premium") {
+        alert("YOU MUST FIRST ENTER PAYMENT DETAILS")
+    }
+})
 
 
 // Light/ Dark Mode 
