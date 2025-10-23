@@ -118,11 +118,7 @@ document.addEventListener('keydown', moveShooter)
     resultDisplay.style.color = '#4e0101ed'
 }
 
-// setTimeout(() => {
-//     flash.animate([...])
-// }, 0)
-
-  
+// LEFT TO RIGHT MOVEMENT   
 function moveInvaders () {
     const leftEdge = alienInvaders[0] % width === 0
     const rightEdge = alienInvaders[alienInvaders.length -1] % width === width -1
@@ -196,6 +192,7 @@ function shoot(e) {
 
 document.addEventListener('keydown', shoot) 
 
+// NEW GAME BUTTON 
 restartButton.addEventListener('click', function() {
     clearInterval(invadersId); // stop old movement
     newGame(); // reset variables
@@ -207,7 +204,7 @@ restartButton.addEventListener('click', function() {
 newGame()
 // draw()
 
-// PREMIUM PAY ALERT POP UP 
+// PREMIUM PAY ALERT POP UP (**TO DO FULLY**)
 modeMenu.addEventListener('click', function (e) {
     if (e.key === "Premium") {
         alert("YOU MUST FIRST ENTER PAYMENT DETAILS")
@@ -216,7 +213,6 @@ modeMenu.addEventListener('click', function (e) {
 
 
 // Light/ Dark Mode 
-
 modeMenu.addEventListener("change", function (e) {
     let mode = e.target.value;
     if (mode === "light") {

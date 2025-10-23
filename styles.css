@@ -48,7 +48,7 @@ body.premium {
 h2 {
   font-weight: bold;
   color: hotpink;
-  font-size: 1.79rem;
+  font-size: 1.7rem;
   text-decoration-thickness: 2px;
   font-family: "BBH Sans Bartle", sans-serif;
   text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
@@ -70,14 +70,14 @@ h3 {
   font-weight: 400;
   font-style: normal;
   color: #e872dd78;
-  font-size: 1.3rem;
+  font-size: 1em;
 }
 
 h4 {
   color: #e872dd78;
   line-height: inherit;
   text-align: center;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .main-title {
@@ -89,15 +89,16 @@ h4 {
 
 .results {
   font-family: "Share Tech", sans-serif;
-  font-style: oblique;
+  /* font-style: oblique; */
   font-weight: bold;
+  padding-bottom: 20px;
 }
 
 .grid-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .results {
@@ -174,7 +175,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 25px;
 }
 
 footer .content-wrapper {
@@ -182,14 +182,13 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
-footer .social {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
 footer .social-icons {
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 0px;
+  justify-content: center;
+  text-align: center;
+  display: grid;
 }
 
 footer .social-icons a {
@@ -254,16 +253,6 @@ address {
 
 /* TABLET MEDIA QUERY  */
 @media screen and (min-width: 768px) {
-  body {
-  }
-
-  body.dark {
-  }
-  body.light {
-  }
-  body.premium {
-  }
-
   .grid {
     width: 600px;
     height: 600px;
@@ -276,26 +265,8 @@ address {
     border: solid 1px rgb(177 5 5 / 83%);
   }
 
-  .invader {
-  }
-
-  .shooter {
-  }
-
-  .laser {
-  }
-
-  .boom {
-  }
-
   h2 {
     font-size: 4rem;
-  }
-
-  @keyframes main-title {
-  }
-
-  h3 {
   }
 
   h4 {
@@ -309,41 +280,14 @@ address {
     padding-bottom: 60px;
   }
 
-  .results {
-  }
-
   .grid-wrapper {
-    padding-bottom: 240px;
+    padding-bottom: 120px;
   }
 
   .results {
     font-size: 4rem;
     font-style: normal;
     font-weight: bolder;
-  }
-
-  .dark-mode {
-  }
-
-  .mode-select {
-  }
-
-  .mode-select label {
-  }
-
-  .mode-select select {
-  }
-
-  .restart-button {
-  }
-
-  .restart-button:hover {
-  }
-
-  .restart-button:active {
-  }
-
-  #restartButton {
   }
 
   .contact {
@@ -356,9 +300,8 @@ address {
   }
 
   .social-icons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    grid-auto-flow: column;
+    padding-top: 10px;
   }
 
   address {
@@ -368,78 +311,7 @@ address {
 
 /* DESKTOP MEDIA QUERY  */
 @media only screen and (min-width: 1200px) {
-  body {
-  }
-
-  body.dark {
-  }
-
-  body.light {
-  }
-
-  body.premium {
-  }
-
-  .grid {
-  }
-
-  .grid div {
-  }
-
-  .invader {
-  }
-
-  .shooter {
-  }
-
-  .laser {
-  }
-
-  .boom {
-  }
-
-  h2 {
-  }
-
-  @keyframes main-title {
-  }
-
-  h3 {
-  }
-
-  .main-title {
-  }
-
-  .results {
-  }
-
-  .grid-wrapper {
-  }
-
-  .results {
-  }
-
-  .dark-mode {
-  }
-
-  .mode-select {
-  }
-
-  .mode-select label {
-  }
-
-  .mode-select select {
-  }
-
-  .restart-button {
-  }
-
-  .restart-button:hover {
-  }
-
-  .restart-button:active {
-  }
-
-  #restartButton {
+  footer .content-wrapper {
+    height: 350px;
   }
 }
