@@ -1,7 +1,6 @@
 body {
-  background-color: rgba(208, 162, 35, 0.669);
+  background-color: rgb(219 198 139 / 67%);
 }
-
 body.dark {
   background-image: linear-gradient(to right, #799186, #57585d, #5d4157);
 }
