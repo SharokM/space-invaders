@@ -206,21 +206,21 @@ newGame()
 
 // Light/ Dark Mode 
 modeMenu.addEventListener("change", function (e) {
-    let mode = e.target.value;
-    if (mode === "light") {
-      body.classList.remove("dark");
-      body.classList.remove("premium");
-      body.classList.add("light");
-    } else if (mode === "dark") {
-      body.classList.remove("light");
-      body.classList.remove("premium");
-      body.classList.add("dark");
-    } else if (mode === "premium") {
-      body.classList.remove("dark");
-      body.classList.remove("light");
-      body.classList.add("premium");
-      alert('You have unlimited premium access!')
-    }
+        let mode = e.target.value;
+            if (mode === "light") {
+            body.classList.remove("dark");
+            body.classList.remove("premium");
+            body.classList.add("light");
+            } else if (mode === "dark") {
+            body.classList.remove("light");
+            body.classList.remove("premium");
+            body.classList.add("dark");
+            } else if (mode === "premium") {
+            body.classList.remove("dark");
+            body.classList.remove("light");
+            body.classList.add("premium");
+            alert('You have unlimited premium access!')
+            }
   });
 
  
