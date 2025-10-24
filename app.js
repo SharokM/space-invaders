@@ -204,14 +204,6 @@ restartButton.addEventListener('click', function() {
 newGame()
 // draw()
 
-// PREMIUM PAY ALERT POP UP (**TO DO FULLY**)
-modeMenu.addEventListener('click', function (e) {
-    if (e.key === "Premium") {
-        alert("YOU MUST FIRST ENTER PAYMENT DETAILS")
-    }
-})
-
-
 // Light/ Dark Mode 
 modeMenu.addEventListener("change", function (e) {
     let mode = e.target.value;
@@ -227,6 +219,7 @@ modeMenu.addEventListener("change", function (e) {
       body.classList.remove("dark");
       body.classList.remove("light");
       body.classList.add("premium");
+      alert('You have unlimited premium access!')
     }
   });
 
