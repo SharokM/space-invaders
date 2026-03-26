@@ -219,7 +219,7 @@ modeMenu.addEventListener("change", function (e) {
             body.classList.remove("dark");
             body.classList.remove("light");
             body.classList.add("premium");
-            alert('You have unlimited premium access!')
+            alert('Retro Mode Activated! 👾')
             }
   });
 
