@@ -146,8 +146,6 @@ h4 {
   -moz-appearance: none;
   appearance: none;
   background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
-    white no-repeat 95.5%;
-  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png")
     white no-repeat calc(100% - 20px);
 }
 
@@ -156,6 +154,7 @@ h4 {
   color: white;
   border: none;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 0.6rem 1rem;
   font-family: "Share Tech", sans-serif;
   font-size: 1rem;

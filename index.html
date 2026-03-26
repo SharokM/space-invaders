@@ -9,17 +9,15 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
 
-  
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
 
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous"
-  />
-
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,83 +29,77 @@
 
   <body>
     <header class="main-title">
-      <h2 class="h2">SPACE INVADERS</h2>
+      <h2>SPACE INVADERS</h2>
       <div>
-        <h3>Saturn Shooter I<h3>
-
-        <div class="dark-mode">
-          <label for="modes">Too Bright?</label>
-          <select name="modes" id="modes">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="premium">Premium ꗃ</option>
-          </select>
-        </div>
+        <h3>Saturn Shooter I</h3>
       </div>
-    <button id="restartButton" class="restart-button">Restart Game</button>
-    
+      <div class="dark-mode">
+        <label for="modes">Too Bright?</label>
+        <select name="modes" id="modes">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="premium">Premium ꗃ</option>
+        </select>
+      </div>
+      <button id="restartButton" class="restart-button">Restart Game</button>
     </header>
 
     <aside id="results">
       <h2 class="score-title">Score:</h2>
-      <p class="results">#score count#</p>
+      <p class="results">0</p>
     </aside>
 
-    <grid class="grid-wrapper">
+    <div class="grid-wrapper">
       <div class="grid"></div>
       <script src="app.js" defer></script>
-    </grid>
+    </div>
 
     <footer>
-        <div class="content-wrapper">
-          <div class="contact">
-            <h4>Coming Soon..</h4>
-            <div class="games-container">
-      
-              <div class="game-card">
-                <p>Game Title 1</p>
-                <img src="images/game1.jpg" alt="Game 1">
-              </div>
-        
-              <div class="game-card">
-                <p>Game Title 2</p>
-                <img src="images/game2.jpg" alt="Game 2">
-              </div>
-        
-              <div class="game-card">
-                <p>Game Title 3</p>
-                <img src="images/game3.jpg" alt="Game 3">
-              </div>
-        
+      <div class="content-wrapper">
+        <div class="contact">
+          <h4>Coming Soon..</h4>
+          <div class="games-container">
+            <div class="game-card">
+              <p>Game Title 1</p>
+              <img src="images/game1.jpg" alt="Game 1" />
             </div>
-          </div>
-          <div class="social">
-            <!-- <h4>Social</h4> -->
-            <div class="social-icons">
-              <p>
-                <a href="https://www.facebook.com"
-                  >
-                  <i class="fab fa-facebook-f"></i
-                ></a>
-              </p>
-              <p>
-                <a href="https://www.twitter.com"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </p>
-              <p>
-                <a href="https://www.instagram.com/accounts/signup/phone/?hl=en"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </p>
+
+            <div class="game-card">
+              <p>Game Title 2</p>
+              <img src="images/game2.jpg" alt="Game 2" />
+            </div>
+
+            <div class="game-card">
+              <p>Game Title 3</p>
+              <img src="images/game3.jpg" alt="Game 3" />
             </div>
           </div>
         </div>
-    
+        <section class="social">
+          <!-- <h4>Social</h4> -->
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/accounts/signup/phone/?hl=en">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+
       <div class="copyright">
         <p>Copyright SM 2025 | Space Invaders</p>
+      </div>
     </footer>
   </body>
 </html>
-
-
