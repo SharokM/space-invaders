@@ -1,66 +1,79 @@
-Space Invaders
+👾 Space Invaders (JavaScript)
 
-Space Invaders is a browser-based arcade game built with vanilla JavaScript. The game recreates the classic Space Invaders experience using a grid-based layout, keyboard controls, and DOM manipulation.
-This project is designed as a beginner JavaScript game to practice logic, event handling, and interactive UI behavior.
+A browser-based recreation of the classic Space Invaders arcade game, built using vanilla JavaScript, HTML, and CSS.
 
-What This App Does
-Displays a grid-based Space Invaders game
-Allows the player to move a shooter left and right
-Allows the player to shoot lasers at invading aliens
-Moves alien invaders across and down the grid
-Detects win and loss conditions
-Displays score and game messages
-Includes a restart button
-Includes light, dark, and premium theme modes
+This project focuses on core front-end concepts such as DOM manipulation, event handling, and game logic, making it a strong foundational project for interactive web development.
 
-Technologies Used
-JavaScript
-HTML5
-CSS3
+🔗 Live Demo
+https://sharokm.github.io/space-invaders/
 
-How The Game Works
-The game board is a 15 × 15 grid created dynamically with JavaScript
-Alien invaders move left and right and drop down when reaching edges
-The player controls the shooter using the keyboard
-Lasers move upward and remove aliens on collision
+
+🎮 Gameplay Overview
+
+The game is played on a dynamically generated 15 × 15 grid, where:
+Alien invaders move horizontally and descend toward the player
+The player controls a shooter at the bottom of the grid
+Lasers can be fired to eliminate incoming aliens
 
 The game ends when:
 An alien reaches the shooter (loss)
-All aliens are removed (win)
+All aliens are destroyed (win)
 
-Controls
-Left Arrow – move shooter left
-Right Arrow – move shooter right
-Up Arrow – shoot laser
+⌨️ Controls
+← Left Arrow – Move shooter left
+→ Right Arrow – Move shooter right
+↑ Up Arrow – Shoot laser
 
-Project Files
-App.js – main game logic and controls
-index.html – game layout
-style.css – game styling and themes
+⚠️ Important:
+Shooting is controlled using the Up Arrow key (not spacebar or mouse).
 
-Requirements
-To run this project, you need:
-A modern web browser
-A local server or direct file access
-(No installation required)
+💻 Platform Compatibility
+✅ Designed for desktop/laptop use only
+❌ Not optimised for mobile or touch devices
 
-How To Run The Game
-Clone or download the repository
-Open index.html in your browser
-Use the arrow keys to play
+This game relies on keyboard input, so it may not function correctly on touchscreens.
 
-Game Features
+🧩 Features
+Grid-based gameplay system
+Alien movement logic (horizontal + downward progression)
+Collision detection (lasers vs aliens)
 Score tracking
-Visual hit effects
-Win and loss animations
-Restart game button
-Theme switching (light, dark, premium)
+Win and loss conditions
+Restart functionality
+Multiple visual themes:
+Light mode
+Dark mode
+Premium theme
 
-Notes
-This is a JavaScript game project
-Built without external libraries or frameworks
-Uses DOM manipulation instead of canvas
+🛠️ Technologies Used
+JavaScript 
+HTML5
+CSS3
+
+📁 Project Structure
+app.js – Core game logic and controls
+index.html – Game layout
+style.css – Styling and themes
+
+🚀 Running the Project
+Clone or download the repository:
+git clone https://github.com/SharokM/space-invaders.git
+cd space-invaders
+
+Open the game:
+Double-click index.html
+OR open it in any modern browser
+
+No installation or dependencies required.
+
+🧠 Learning Focus
+This project demonstrates:
+Event-driven programming
+DOM-based animation techniques
+Game loop logic without canvas
+State management in a simple game
 
 
-S McDonnaugh
-Space Invaders
+👤 Author
+S. McDonnaugh
+https://github.com/SharokM
