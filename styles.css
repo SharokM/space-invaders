@@ -182,16 +182,18 @@ footer {
 
 footer .content-wrapper {
   width: 100%;
-  margin: 50px 0;
+  margin: 25px 0;
 }
 
 footer .social-icons {
   gap: 10px;
   align-items: center;
-  padding-bottom: 0px;
+  padding: 12px;
+  padding: 25px;
   justify-content: center;
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer .social-icons a {
@@ -221,6 +223,37 @@ footer .social-icons p {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
+}
+
+footer .games-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer .game-card {
+  background: #1a1c4a;
+  /* padding: 10px; */
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+footer .game-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+footer .game-card p {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+footer .game-card:hover {
+  transform: translateY(-4px);
 }
 
 footer p {
@@ -302,9 +335,40 @@ address {
     font-weight: 400;
   }
 
+  footer .games-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 10px;
+  }
+
+  footer .game-card {
+    background: #1a1c4a;
+    /* padding: 10px; */
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  footer .game-card img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  footer .game-card p {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
+
+  footer .game-card:hover {
+    transform: translateY(-4px);
+  }
+
   .social-icons {
     grid-auto-flow: column;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   address {
