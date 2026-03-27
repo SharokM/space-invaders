@@ -242,6 +242,8 @@ footer .game-card {
 
 footer .game-card img {
   width: 100%;
+  height: 60%;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -310,9 +312,8 @@ address {
   }
 
   .main-title {
-    padding-top: 80px;
     background-color: #0a0a08d5;
-    padding-bottom: 60px;
+    margin: 2px;
   }
 
   .grid-wrapper {
@@ -339,6 +340,7 @@ address {
     justify-content: center;
     gap: 80px;
     margin: 10px;
+    align-items: normal;
   }
 
   footer .game-card {
@@ -351,8 +353,7 @@ address {
   }
 
   footer .game-card img {
-    width: 100%;
-    border-radius: 6px;
+    height: 75%;
   }
 
   footer .game-card p {
@@ -385,7 +386,23 @@ address {
     font-size: 3.75rem;
   }
 
+  h4 {
+    font-size: 1.5em;
+    color: #a96f9b;
+    margin: 35px;
+  }
+
   footer .content-wrapper {
-    height: 350px;
+    height: 360px;
+  }
+
+  footer .game-card img {
+    height: 70%;
+  }
+
+  footer .social-icons {
+    gap: 15px;
+    padding: 15px;
+    margin: 0;
   }
 }
