@@ -11,7 +11,6 @@ var body = document.querySelector("body");
 const restartButton = document.querySelector('#restartButton')
 
 function newGame() {
-    // grid.innerHTML = ""
     resultDisplay.textContent = "0"
     results = 0
     aliensRemoved.length = 0
@@ -185,7 +184,7 @@ function shoot(e) {
         }
     }
 
-    if (e.key === 'ArrowUp') {
+    if (e.key === 'Space') {
         laserId = setInterval(moveLaser, 100)
     }
  }
@@ -202,7 +201,7 @@ restartButton.addEventListener('click', function() {
     invadersId = setInterval(moveInvaders, 600); // restart movement
   });  
 newGame()
-// draw()
+
 
 // Light/ Dark Mode 
 modeMenu.addEventListener("change", function (e) {
