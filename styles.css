@@ -170,6 +170,43 @@ h4 {
   transform: scale(0.95);
 }
 
+.game-instructions {
+  list-style: none;
+  color: white;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.game-instructions li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffffff33;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.game-instructions .icon {
+  margin-right: 10px;
+}
+
+.game-instructions .key {
+  background: black;
+  color: #00ffcc;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #00ffcc;
+  font-size: 1.2rem;
+  box-shadow: 0 0 6px #00ffcc;
+}
+
 footer {
   background-color: #0a0a08d5;
   display: flex;
