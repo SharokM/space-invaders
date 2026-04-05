@@ -184,7 +184,8 @@ function shoot(e) {
         }
     }
 
-    if (e.key === 'Space') {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
         laserId = setInterval(moveLaser, 100)
     }
  }
